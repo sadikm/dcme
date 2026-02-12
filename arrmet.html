@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Array1</title>
+</head>
+<body>
+<script>
+let arr=[]
+let arr1=[10,20,30,40]
+arr2=[10,20,30,40]
+//array methods
+
+arr.push(10)
+arr.push(20)
+document.write("Push method <br>")
+document.write(arr+"<br>")
+
+
+arr.unshift(30)//30 10 20 
+arr.unshift(40)
+document.write("unshift method <br>")
+document.write(arr+"<br>")
+
+arr2.pop()
+arr2.shift()
+document.write("pop &shift method <br>")
+document.write(arr2+"<br>")
+
+document.write("concat method <br>")
+let arr3=arr.concat(arr1)
+document.write(arr3+"<br>")
+
+//slice 
+document.write("slice method <br>")
+document.write(arr3.slice(2,6)+"<br>")
+
+//indexOf method
+document.write("<br><b>indexOf</b><br>")
+document.write(arr.indexOf(20)+"<br>")
+document.write(arr.indexOf(44)+"<br>")
+
+//includes method
+document.write("<br><b>includes</b><br>")
+document.write(arr.includes(20)+"<br>")
+document.write(arr.includes(44)+"<br>")
+
+//sort method
+document.write("<br><b>sort</b><br>")
+document.write(arr3.sort()+"<br>")
+
+//includes method
+document.write("<br><b>reverse</b><br>")
+document.write(arr3.reverse()+"<br>")
+
+</script>
+</body>
+</html>

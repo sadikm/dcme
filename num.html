@@ -1,0 +1,103 @@
+<html>
+<body>
+<script>
+
+// Method 1: Number Literal (Primitive - Recommended)
+
+let num1 = 42;
+let num2 = 3.14;
+let num3 = -100;
+
+// Method 2: Using Number() constructor (Object)
+
+let num4 = new Number(42);
+
+document.write(typeof num1+"<br>");  
+document.write(typeof num4+"<br>");  
+
+// Method 3: Number() as function (Type conversion)
+
+let str = "123";
+
+let converted = Number(str);
+document.write("<b>  </b>");
+document.write(converted+"<br>");    
+
+document.write(Number("3.14")+"<br>"); 
+document.write(Number(true)+"<br>");   
+document.write(Number(false)+"<br>");  
+document.write(Number("abc")+"<br>");  
+
+//Important Properties:
+// Number properties (static)
+document.write("<b> properties </b><br>");
+document.write("Max:"+Number.MAX_VALUE+"<br>");           
+document.write("Min:"+Number.MIN_VALUE+"<br>");           
+document.write("+ve infinity:"+Number.POSITIVE_INFINITY+"<br>");   
+document.write("-ve infinity:"+Number.NEGATIVE_INFINITY+"<br>");  
+document.write("NaN:"+Number.NaN+"<br>");                 
+document.write("max safe int:"+Number.MAX_SAFE_INTEGER+"<br>");    
+document.write("Min safe int:"+Number.MIN_SAFE_INTEGER+"<br>");    
+document.write("Eps:"+Number.EPSILON+"<br>");             
+
+//Important Methods:
+let num = 123.456789;
+document.write("<b>  fixed decimal</b><br>");
+// 1. toFixed() - Format to fixed decimal places
+document.write(num.toFixed(0)+"<br>");     
+document.write(num.toFixed(2)+"<br>");     
+document.write(num.toFixed(5)+"<br>");      
+
+// 2. toPrecision() - Format to specified length
+document.write("<b> to precision </b></br>");
+document.write(num.toPrecision(3)+"<br>");  
+document.write(num.toPrecision(5)+"<br>");  
+document.write(num.toPrecision(10)+"<br>"); 
+
+// 4. toString() - Convert to string (can specify base)
+document.write("<b> convert to str </b></br>");
+document.write(num.toString()+"<br>");        
+
+// 5. valueOf() - Return primitive value
+document.write("<b> valueOf </b><br>");
+let numObj = new Number(42);
+document.write(numObj.valueOf()+"<br>");      
+
+// Static Methods
+
+// 6. Number.isInteger() - Check if integer
+document.write("<b> check integer </b><br>");
+document.write(Number.isInteger(42)+"<br>");  
+document.write(Number.isInteger(42.5)+"<br>");
+document.write(Number.isInteger("42")+"<br>"); 
+
+// 7. Number.isFinite() - Check if finite number
+document.write("<b> check finite </b><br>");
+document.write(Number.isFinite(42)+"<br>");    
+document.write(Number.isFinite(Infinity)+"<br>");
+document.write(Number.isFinite("42")+"<br>");    
+
+// 8. Number.isNaN() - Check if NaN
+document.write("<b> check NaN </b><br>");
+document.write(Number.isNaN(NaN)+"<br>");        
+document.write(Number.isNaN(42)+"<br>");         
+document.write(Number.isNaN("hello")+"<br>");    
+
+// 10. Number.parseInt() - Parse to integer
+document.write("<b> parseInt </b><br>");
+document.write(Number.parseInt("42")+"<br>");    
+document.write(Number.parseInt("42.99")+"<br>");      
+document.write(Number.parseInt("42px")+"<br>");        
+document.write(Number.parseInt("ff", 16)+"<br>");      
+
+// 11. Number.parseFloat() - Parse to float
+document.write("<b> parsefloat </b><br>");
+document.write(Number.parseFloat("3.14")+"<br>");      
+document.write(Number.parseFloat("3.14abc")+"<br>");   
+document.write(Number.parseFloat("abc")+"<br>");       
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Events Simple</title>
+</head>
+<body>
+    <h2>Mouse Events</h2>
+    <button id="btn">Mouse Button</button>
+    <div id="area" style="width:300px; height:150px; border:2px solid black; margin-top:10px;">
+        Mouse Area
+    </div>
+    <div id="output"></div>
+    
+    <script>
+        let btn = document.getElementById("btn");
+        let area = document.getElementById("area");
+        let output = document.getElementById("output");
+        
+        // Click
+        btn.addEventListener("click", function() {
+            output.innerHTML += "<p>Click: Button clicked</p>";
+        });
+        
+        // Double Click
+        btn.addEventListener("dblclick", function() {
+            output.innerHTML += "<p>Double Click: Button double clicked</p>";
+        });
+        
+        // Mouse Enter
+        area.addEventListener("mouseenter", function() {
+            output.innerHTML += "<p>Mouse Enter: Mouse entered area</p>";
+        });
+        
+        // Mouse Leave
+        area.addEventListener("mouseleave", function() {
+            output.innerHTML += "<p>Mouse Leave: Mouse left area</p>";
+        });
+        
+        // Mouse Over
+        btn.addEventListener("mouseover", function() {
+            output.innerHTML += "<p>Mouse Over: Mouse over button</p>";
+        });
+        
+        // Mouse Out
+        btn.addEventListener("mouseout", function() {
+            output.innerHTML += "<p>Mouse Out: Mouse out of button</p>";
+        });
+        
+        // Mouse Down
+        btn.addEventListener("mousedown", function() {
+            output.innerHTML += "<p>Mouse Down: Mouse button pressed</p>";
+        });
+        
+        // Mouse Up
+        btn.addEventListener("mouseup", function() {
+            output.innerHTML += "<p>Mouse Up: Mouse button released</p>";
+        });
+    </script>
+</body>
+</html>

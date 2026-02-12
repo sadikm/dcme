@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Event Simple</title>
+</head>
+<body>
+    <h2>Submit Event</h2>
+    <form id="form">
+        <input type="text" id="username" placeholder="Username">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="output"></div>
+    
+    <script>
+        let form = document.getElementById("form");
+        let username = document.getElementById("username");
+        let output = document.getElementById("output");
+        
+        // Submit
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            output.innerHTML += "<p>Submit: Form submitted</p>";
+            output.innerHTML += "<p>Username: " + username.value + "</p>";
+        });
+    </script>
+</body>
+</html>

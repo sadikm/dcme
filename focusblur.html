@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Focus Blur Events Simple</title>
+</head>
+<body>
+    <h2>Focus and Blur Events</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="email" placeholder="Email">
+    <div id="output"></div>
+    
+    <script>
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let output = document.getElementById("output");
+        
+        // Focus
+        name.addEventListener("focus", function() {
+            output.innerHTML += "<p>Focus: Name field focused</p>";
+        });
+        
+        email.addEventListener("focus", function() {
+            output.innerHTML += "<p>Focus: Email field focused</p>";
+        });
+        
+        // Blur
+        name.addEventListener("blur", function() {
+            output.innerHTML += "<p>Blur: Name field blurred</p>";
+        });
+        
+        email.addEventListener("blur", function() {
+            output.innerHTML += "<p>Blur: Email field blurred</p>";
+        });
+    </script>
+</body>
+</html>

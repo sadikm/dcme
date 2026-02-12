@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+<h3>Login Page</h3>
+Username:
+<input type="text" id="user"><br><br>
+Password:
+<input type="password" id="pass"><br><br>
+<button onclick="login()">Login</button>
+<p id="msg" style="color:red;"></p>
+<script>
+function login(){
+    // get values
+    let username = document.getElementById("user").value;
+    let password = document.getElementById("pass").value;
+    // validation
+    if(username == "" || password == "")
+	{
+        document.getElementById("msg").innerHTML =
+            "Username and Password are required";
+        return;    }
+// credential check
+    if(username == "admin" && password == "1234")
+	{
+        document.getElementById("msg").innerHTML =
+            "Login successful";
+        // navigate to next page
+        window.location.href = "welcome.html";
+    }    else	{
+        document.getElementById("msg").innerHTML =
+            "Invalid username or password";
+    }}
+</script>
+
+</body>
+</html>

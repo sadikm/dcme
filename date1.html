@@ -1,0 +1,58 @@
+<html>
+<body>
+<script>
+let d1=new Date();
+let d2=new Date("Jan 15,2026");
+let date=new Date("2026-02-10T10:30:45");
+let d3=new Date(2026,2,15);
+document.write(d1+"<br>");
+document.write(d2+"<br>");
+document.write(date+"<br>");
+document.write(d3+"<br>");
+
+document.write("Get Methods <br>");
+document.write("Year:"+date.getFullYear()+"<br>");
+document.write("Month:"+date.getMonth()+"<br>");
+document.write("Date:"+date.getDate()+"<br>");
+document.write("day(0-11):"+date.getDay()+"<br>");
+document.write("Hour:"+date.getHours()+"<br>");
+document.write("Min:"+date.getMinutes()+"<br>");
+document.write("Sec:"+date.getSeconds()+"<br>");
+document.write("MiSec:"+date.getMilliseconds()+"<br>");
+document.write("Tot_sec:"+date.getTime()+"<br><br><br>");
+
+
+let date1=new Date();
+document.write("<strong>"+date1+"</strong><br>");
+
+//set individual components
+date1.setFullYear(2025);
+date1.setMonth(5);
+date1.setDate(20);
+date1.setHours(15);
+date1.setMinutes(45);
+date1.setSeconds(30);
+date1.setMilliseconds(500);
+
+document.write("<strong>"+date1+"</strong><br>");
+document.write("<br>Set Methods <br>");
+document.write("Year:"+date1.getFullYear()+"<br>");
+document.write("Month:"+date1.getMonth()+"<br>");
+document.write("Date:"+date1.getDate()+"<br>");
+document.write("day(0-11):"+date1.getDay()+"<br>");
+document.write("Hour:"+date1.getHours()+"<br>");
+document.write("Min:"+date1.getMinutes()+"<br>");
+document.write("Sec:"+date1.getSeconds()+"<br>");
+document.write("MiSec:"+date1.getMilliseconds()+"<br>");
+
+document.write("<br>Important Formats <br>");
+document.write(date+"<br>");
+
+document.write("Local date format:"+date.toLocaleDateString()+"<br>");
+document.write("Local time format:"+date.toLocaleTimeString()+"<br>");
+document.write("ISO format:"+date.toISOString()+"<br>");
+document.write("UTC format:"+date.toUTCString()+"<br>");
+
+</script>
+</body>
+</html>

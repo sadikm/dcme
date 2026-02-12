@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Objects</title>
+</head>
+<body>
+<h1>java script Objects</h1>
+<script>
+// Creating a student object
+let student = {
+    name: "Alice",
+    age: 20,
+    course: "Computer Science",
+    grade: "A",
+    
+    // Method
+    displayInfo: function() {
+        document.write("<br>Name: " + this.name);
+        document.write("<br>Age: " + this.age);
+        document.write("<br>Course: " + this.course);
+    }
+};
+// Accessing properties
+document.write("<br>"+student.name);      // Alice
+document.write("<br>"+student.age);       // 20
+
+// Calling method
+student.displayInfo();
+
+</script>
+
+</body>
+</html>

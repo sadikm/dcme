@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Objects</title>
+</head>
+<body>
+<script>
+let car = new Object();
+car.brand = "Toyota";
+car.model = "Camry";
+car.year = 2023;
+car.color = "Blue";
+
+car.start = function() {
+    document.write(this.brand + " " + this.model + " started!");
+};
+
+document.write(car.brand+"<br>");  // Toyota
+car.start();             // Toyota Camry started!
+
+
+</script>
+
+</body>
+</html>

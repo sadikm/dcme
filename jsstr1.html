@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript String Object Methods</title>
+</head>
+<body>
+    <h2>JavaScript String Object Methods</h2>
+
+    <script>
+        // Create Date Object
+        let str = " Hello, JavaScript String Object! ";
+
+        // String Properties
+        let length = str.length;  // Get length of string
+
+        // String Methods
+        let trimmed = str.trim(); // Remove spaces from start & end
+        let upperCase = str.toUpperCase(); // Convert to uppercase
+        let lowerCase = str.toLowerCase(); // Convert to lowercase
+        let index = str.indexOf("JavaScript"); // Find position of word
+        let lastIndex = str.lastIndexOf("Object"); // Find last occurrence
+        let replaced = str.replace("JavaScript", "JS"); // Replace text
+        let substring = str.substring(7, 18); // Extract substring
+        let splitArray = str.split(","); // Convert string to array
+        let charAt = str.charAt(1); // Get character at index 1
+        let includesCheck = str.includes("JavaScript"); // Check if contains
+        let repeatStr = str.repeat(2); // Repeat string twice
+
+        document.write("Original: "+str+"<br>")
+		document.write("Length: "+length+"<br>")
+		document.write("trimmed: "+trimmed+"<br>")
+		document.write("upper: "+upperCase+"<br>")
+		document.write("lower: "+lowerCase+"<br>")
+		document.write("1st index: "+index+"<br>")
+		document.write("last index: "+lastIndex+"<br>")
+		document.write("replaced: "+replaced+"<br>")
+		document.write("substring: "+substring+"<br>")
+		document.write("Split: "+splitArray+"<br>")
+		document.write("includes: "+includesCheck+"<br>")
+		document.write("repats: "+repeatStr+"<br>")
+		
+		</script>
+</body>
+</html>

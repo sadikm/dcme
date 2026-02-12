@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>linear search</title>
+</head>
+<body>
+<script>
+// Linear Search Function
+function linearSearch(arr, target) {
+    // Loop through each element
+    for (let i = 0; i < arr.length; i++) {
+        // Check if current element matches target
+        if (arr[i] === target) {
+            return i; // Return index if found
+        }
+    }
+    return -1; // Return -1 if not found
+}
+
+// Test the function
+let numbers = [64, 34, 25, 12, 22, 11, 90];
+
+document.write("Array: " + numbers);
+document.write("<br>Search for 25: Index = " + linearSearch(numbers, 25)); // 2
+document.write("<br>Search for 100: Index = " + linearSearch(numbers, 100)); // -1
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Array access</title>
+</head>
+<body>
+<script>
+let arr=[10,20.5,"java",true,65]
+//find the length
+let len=arr.length
+
+//method 1 by using index
+
+document.write(arr[1]+"<br>")
+document.write(arr[len-2]+"<br>")
+
+//method 2 array.at()
+document.write(arr.at(0)+"<br>")
+document.write(arr.at(-2)+"<br>")
+
+//for loop
+for (let i=0;i<len;i++)
+{
+document.write(arr[i]+"<br>")
+}
+
+//for of loop
+document.write("<b>for of loop</b><br>")
+for (i of arr)
+{
+
+document.write(i+"<br>")
+}
+
+
+</script>
+</body>
+</html>
