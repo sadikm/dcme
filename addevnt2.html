@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Named Function Syntax</title>
+</head>
+<body>
+    <h2>Named Function Syntax</h2>
+    <button id="btn">Click Me</button>
+    <div id="output"></div>
+    
+    <script>
+        let btn = document.getElementById("btn");
+        let output = document.getElementById("output");
+        
+        // Define named function
+        function showMessage() {
+            output.innerHTML = "<p>Named function called!</p>";
+        }
+        
+        // Syntax: element.addEventListener(event, functionName)
+        btn.addEventListener("click", showMessage);
+        // Note: Don't use () with function name
+    </script>
+</body>
+</html>

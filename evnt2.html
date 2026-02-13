@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>onclick Property</title>
+</head>
+<body>
+    <h2>onclick Property Method</h2>
+    <button id="btn">Click Me</button>
+    <div id="output">output</div>
+    
+    <script>
+        let btn = document.getElementById("btn");
+        let output = document.getElementById("output");
+        
+        btn.onclick = function() {
+            output.innerHTML = "<p>Button clicked using onclick property</p>";
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keyboard Events</title>
+</head>
+<body>
+
+<input type="text" id="input" placeholder="Type something">
+<p id="output"></p>
+
+<script>
+var input = document.getElementById("input");
+var output = document.getElementById("output");
+
+input.addEventListener("keypress", function(){
+    output.textContent = "Key Pressed";
+});
+
+input.addEventListener("keydown", function(){
+    output.textContent = "Key Down";
+});
+
+input.addEventListener("keyup", function(){
+    output.textContent = "Key Released";
+});
+</script>
+
+</body>
+</html>

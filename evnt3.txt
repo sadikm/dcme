@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Syntax</title>
+    <title>addEventListener Method</title>
 </head>
 <body>
-    <h2>Simple addEventListener Syntax</h2>
+    <h2>addEventListener Method</h2>
     <button id="btn">Click Me</button>
     <div id="output"></div>
     
     <script>
-        // Step 1: Select element
         let btn = document.getElementById("btn");
         let output = document.getElementById("output");
         
-        // Step 2: Add event listener
-        // Syntax: element.addEventListener(event, function)
         btn.addEventListener("click", function() {
-            output.innerHTML = "<p>Button clicked!</p>";
+            output.innerHTML = "<p>Button clicked using addEventListener</p>";
         });
     </script>
 </body>

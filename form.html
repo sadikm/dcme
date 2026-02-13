@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Events</title>
+</head>
+<body>
+
+<form id="myform">
+    Name: <input type="text" id="name"><br><br>
+
+    <select id="course">
+        <option>Java</option>
+        <option>Python</option>
+        <option>C++</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<p id="message"></p>
+
+<script>
+var form = document.getElementById("myform");
+var nameField = document.getElementById("name");
+var course = document.getElementById("course");
+var message = document.getElementById("message");
+
+nameField.addEventListener("focus", function(){
+    message.textContent = "Input Field Focused";
+});
+
+nameField.addEventListener("blur", function(){
+    message.textContent = "Input Field Lost Focus";
+});
+
+course.addEventListener("change", function(){
+    message.textContent = "Course Changed";
+});
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    message.textContent = "Form Submitted";
+});
+</script>
+
+</body>
+</html>

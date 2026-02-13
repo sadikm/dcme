@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline Event Handler</title>
+</head>
+<body>
+    <h2>Inline HTML Event Handler</h2>
+    
+<button onclick="showMessage()">Click Me</button>
+
+    <div id="output"></div>
+    
+    <script>
+        function showMessage() {
+            document.getElementById("output").innerHTML = "<p>Button clicked using inline onclick</p>";
+        }
+    </script>
+</body>
+</html>

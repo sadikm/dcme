@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>addEventListener Solution</title>
+</head>
+<body>
+    <h2>addEventListener - Multiple Handlers Work!</h2>
+    <button id="btn">Click Me</button>
+    <div id="output"></div>
+    
+    <script>
+        let btn = document.getElementById("btn");
+        let output = document.getElementById("output");
+        
+        // First handler
+        btn.addEventListener("click", function() {
+            output.innerHTML += "<p>First function executed</p>";
+        });
+        
+        // Second handler - Both will work together!
+        btn.addEventListener("click", function() {
+            output.innerHTML += "<p>Second function executed</p>";
+        });
+        
+        // Third handler - All three will work!
+        btn.addEventListener("click", function() {
+            output.innerHTML += "<p>Third function executed</p>";
+        });
+        
+        // All three functions execute when button is clicked!
+    </script>
+</body>
+</html>

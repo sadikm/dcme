@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>onclick Problem</title>
+</head>
+<body>
+    <h2>onclick - Can't Add Multiple Handlers</h2>
+    <button id="btn">Click Me</button>
+    <div id="output"></div>
+    
+    <script>
+        let btn = document.getElementById("btn");
+        let output = document.getElementById("output");
+        
+        // First handler
+        btn.onclick = function() {
+            output.innerHTML = "<p>First function</p>";
+        };
+        
+        // Second handler - This will REPLACE the first one
+        btn.onclick = function() {
+            output.innerHTML = "<p>Second function (First is gone!)</p>";
+        };
+        
+        // Only second function will work!
+    </script>
+</body>
+</html>
